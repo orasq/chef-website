@@ -1,0 +1,13 @@
+.wrapper {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @mixin mediumScreen {
+    padding: 0 30px;
+  }
+
+  @mixin largeScreen {
+    padding: 0;
+  }
+}

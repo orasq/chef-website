@@ -1,0 +1,191 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 70px;
+  padding-top: 4px;
+  border-bottom: 1px solid $lightGrey;
+
+  @mixin mediumScreen {
+    height: 88px;
+  }
+
+  &__logo a {
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    font-family: $poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $darkGrey;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    @mixin largeScreen {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__logo-icon {
+    display: none;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    fill: $darkGrey;
+
+    @mixin mediumScreen {
+      display: block;
+    }
+
+    @mixin largeScreen {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  &__main-nav {
+    flex: 3;
+    display: none;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    @mixin mediumScreen {
+      display: flex;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+    }
+
+    li {
+      padding: 0 17px;
+    }
+  }
+
+  &__main-nav-link {
+    position: relative;
+    font-family: $poppins;
+    font-size: 0.85rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $mediumGrey;
+    transition: all 0.2s ease-out;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 38px;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: transparent;
+      transition: all 0.2s ease-out;
+    }
+
+    &--selected,
+    &:hover {
+      color: $darkGrey;
+      &::after {
+        content: "";
+        height: 3px;
+        background-color: $darkGrey;
+      }
+    }
+  }
+
+  &__right-part {
+    flex: 1;
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &__tools {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px 10px;
+    border-right: 1px solid $lightGrey;
+
+    @mixin mediumScreen {
+      padding: 20px 26px;
+    }
+  }
+
+  &__tools-icons {
+    height: 24px;
+    width: 24px;
+    margin: 0 10px;
+    fill: $darkGrey;
+    transition: fill 0.2s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      fill: $mediumGrey;
+    }
+
+    @mixin mediumScreen {
+      margin: 0 4px;
+    }
+  }
+
+  &__burger {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+
+    @mixin mediumScreen {
+      padding: 20px 26px;
+    }
+  }
+
+  &__burger-icon {
+    height: 20px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      span {
+        background-color: $mediumGrey;
+        transition: background-color 0.2s ease-out;
+        &::before,
+        &::after {
+          background-color: $mediumGrey;
+          transition: background-color 0.2s ease-out;
+        }
+      }
+    }
+
+    span {
+      position: relative;
+      display: inline-block;
+      height: 2px;
+      width: 100%;
+      background-color: $darkGrey;
+
+      &::before,
+      &::after {
+        content: "";
+        height: 2px;
+        width: 30px;
+        position: absolute;
+        background-color: $darkGrey;
+      }
+
+      &::before {
+        top: -7px;
+      }
+
+      &::after {
+        top: 7px;
+      }
+    }
+  }
+}

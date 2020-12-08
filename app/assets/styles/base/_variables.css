@@ -1,3 +1,11 @@
 /* COLORS */
-$mainBlue: #2f5572;
-$mainOrange: #d59541;
+$bgLightGrey: #dce1e7;
+$lightGrey: #a8b2bc;
+$mediumGrey: #676767;
+$darkGrey: #333333;
+
+$yellow: #f2ce00;
+
+/* FONTS */
+
+$poppins: "Poppins", sans-serif;
