@@ -3,8 +3,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  color: #333;
+  color: $darkGrey;
   background-color: $bgLightGrey;
 }
 
@@ -26,4 +25,13 @@ img {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+
+  b {
+    font-family: $poppins;
+    font-weight: 900;
+  }
 }
