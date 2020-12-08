@@ -34,5 +34,18 @@
     "webpack": "^5.3.0",
     "webpack-cli": "^4.1.0",
     "webpack-dev-server": "^3.11.0"
-  }
+  },
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orasq/_webpack-base-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orasq/_webpack-base-project/issues"
+  },
+  "homepage": "https://github.com/orasq/_webpack-base-project#readme",
+  "description": ""
 }
