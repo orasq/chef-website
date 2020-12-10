@@ -23,11 +23,7 @@
         <nav class="header__main-nav">
           <ul>
             <li>
-              <a
-                class="header__main-nav-link header__main-nav-link--selected"
-                href="/"
-                >Recipes</a
-              >
+              <a class="header__main-nav-link" href="/">Recipes</a>
             </li>
             <li><a class="header__main-nav-link" href="/">Gastropedia</a></li>
             <li><a class="header__main-nav-link" href="/">The Chef</a></li>
@@ -60,8 +56,66 @@
     </div>
 
     <section class="wrapper">
-      <span>Chapter 1</span>
-      <h1>Tastefull <b>recipes</b></h1>
+      <div class="mt-m mb-s text-center">
+        <span class="spantitle__serif-s">Chapter 1</span>
+        <h1 class="uppercase mt-xs mb-xxs">Tastefull <b>recipes</b></h1>
+        <span class="spantitle__sansserif-m uppercase">By Panos Ioannidis</span>
+      </div>
+      <div class="grid grid__3col mb-l">
+        <div class="card__large">
+          <div class="card__wrapper">
+            <div class="card__image-wrap">image</div>
+            <div class="card__text-wrap">text</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__wrapper">
+            <div class="card__image-wrap">
+              <figure>
+                <img src="./assets/images/recipe-1.jpg" alt="" />
+              </figure>
+              <div class="card__video-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="card__text-wrap">
+              <div class="card__text-header">
+                <h3>Lunch</h3>
+                <svg
+                  class="card__menu-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  />
+                </svg>
+              </div>
+              <p class="card__p">
+                Pumpkin soupwith nutmeg, goat cheese and pumpkin seeds
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__wrapper">
+            <div class="card__image-wrap">image</div>
+            <div class="card__text-wrap">text</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__wrapper">
+            <div class="card__image-wrap">image</div>
+            <div class="card__text-wrap">text</div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="overlay-menu"></div>

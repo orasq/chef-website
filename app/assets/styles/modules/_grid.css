@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+
+  &__3col {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: 2fr 1fr;
+    column-gap: 30px;
+    row-gap: 55px;
+  }
+}

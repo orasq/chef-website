@@ -1,0 +1,14 @@
+.spantitle {
+  &__serif-s {
+    font-family: $garamond;
+    font-size: 1rem;
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  &__sansserif-m {
+    font-family: $poppins;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+}
