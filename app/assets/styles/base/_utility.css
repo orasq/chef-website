@@ -73,3 +73,25 @@
 .mb-xxl {
   margin-bottom: 160px;
 }
+
+/* FLEX */
+
+.self-justify-r {
+  margin-left: auto;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}

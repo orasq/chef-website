@@ -1,0 +1,19 @@
+.button {
+  &__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 68px;
+    width: 68px;
+  }
+
+  &__circle-arrow {
+    font-size: 1.2rem;
+    color: $darkGrey;
+  }
+
+  &__yellow {
+    background-color: $yellow;
+  }
+}

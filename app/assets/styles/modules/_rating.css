@@ -1,0 +1,26 @@
+.rating {
+  display: flex;
+  align-items: flex-end;
+
+  /* put margin between elements without affecting the first one
+  margin-left is only applied where the element is preceded by another element*/
+  & > * + * {
+    margin-left: 3px;
+  }
+
+  &__star {
+    font-size: 0.7rem;
+    color: $lightGrey;
+
+    &--active {
+      color: $yellow;
+    }
+  }
+
+  &__count {
+    margin-left: 10px;
+    font-family: $poppins;
+    font-size: 0.75rem;
+    color: $lightGrey;
+  }
+}
