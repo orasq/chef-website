@@ -2,8 +2,26 @@
   display: grid;
 
   &__3col {
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-    column-gap: 30px;
-    row-gap: 55px;
+    grid-template-columns: minmax(100px, 240px);
+    justify-content: center;
+    row-gap: 4vw;
+
+    @mixin XSmallScreen {
+      grid-template-columns: minmax(100px, 350px);
+    }
+
+    @mixin smallScreen {
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+      column-gap: 2vw;
+    }
+
+    @mixin mediumScreen {
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+
+    @mixin XLargeScreen {
+      column-gap: 30px;
+      row-gap: 55px;
+    }
   }
 }
