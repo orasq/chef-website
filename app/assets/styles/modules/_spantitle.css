@@ -1,14 +1,22 @@
 .spantitle {
   &__serif-s {
     font-family: $garamond;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 200;
     font-style: italic;
+
+    @mixin mediumScreen {
+      font-size: 1rem;
+    }
   }
 
   &__sansserif-m {
     font-family: $poppins;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 200;
+
+    @mixin mediumScreen {
+      font-size: 1rem;
+    }
   }
 }

@@ -53,7 +53,7 @@
         <h1 class="uppercase mt-xs mb-xxs">Tastefull <b>recipes</b></h1>
         <span class="spantitle__sansserif-m uppercase">By Panos Ioannidis</span>
       </div>
-      <div class="grid grid__3col mb-l">
+      <div class="grid grid__3col mb-m">
         <div class="card__large">
           <div class="card__wrapper">
             <div class="card__image-wrap">
@@ -111,11 +111,14 @@
               <p class="card__p mb-s">
                 A great alternative to classic breakfast pancakes, these vegan versions are the ultimate way to kick off the weekend!
               </p>
-              <a href="#">
-                <div class="button__circle button__yellow self-justify-r">
-                  <span class="button__circle-arrow">⟶</span>
-                </div>
-              </a>
+              <div class="card__large-button-wrap">
+                <a href="#">
+                  <div class="button__circle button__yellow">
+                    <span class="button__circle-arrow">⟶</span>
+                  </div>
+                </a>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -270,6 +273,65 @@
               <div class="card__text-header justify-space-between mb-xxs">
                 <a href="#">
                   <h3 class="card__title-small uppercase">Lunch</h3>
+                </a>
+                <svg
+                  class="card__menu-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                  />
+                </svg>
+              </div>
+              <p class="card__p">
+                Pumpkin soupwith nutmeg, goat cheese and pumpkin seeds
+              </p>
+              <div class="rating mt-s" data-rating="3">
+                <span class="rating__star rating__star--active">★</span>
+                <span class="rating__star rating__star--active">★</span>
+                <span class="rating__star rating__star--active">★</span>
+                <span class="rating__star rating__star--active">★</span>
+                <span class="rating__star">★</span>
+                <span class="rating__count">92</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__wrapper">
+            <div class="card__image-wrap">
+              <a href="#">
+                <figure>
+                  <img
+                    src="./assets/images/recipe-1.jpg"
+                    alt="Pumpkin soupwith nutmeg"
+                  />
+                </figure>
+                <div class="card__video-i-wrap">
+                  <svg class="card__video-icon" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                      d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"
+                    />
+                  </svg>
+                </div>
+              </a>
+
+              <div class="card__heart-i-wrap">
+                <svg class="card__heart-icon card__heart-icon--shadow" viewBox="0 0 24 24">
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="card__text-wrap">
+              <div class="card__text-header justify-space-between mb-xxs">
+                <a href="#">
+                  <h3 class="card__title-small uppercase">Yooo</h3>
                 </a>
                 <svg
                   class="card__menu-icon"
@@ -297,7 +359,14 @@
           </div>
         </div>
       </div>
+
+      <div class="mb-l text-center">
+        <a href="#" class="button__rounded">
+          View all recipes
+        </a>
+      </div>
     </section>
+    
 
     <div class="overlay-menu"></div>
   </body>

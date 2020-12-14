@@ -9,3 +9,7 @@ $yellow: #f2ce00;
 /* FONTS */
 $poppins: "Poppins", sans-serif;
 $garamond: "EB Garamond", serif;
+
+/* ANIMATIONS */
+$animFast: 0.2s;
+$animSlow: 0.5s;

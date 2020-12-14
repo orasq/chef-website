@@ -55,9 +55,19 @@ a {
 
 h1 {
   font-family: $garamond;
-  font-size: 3rem;
+  font-size: 1.8rem;
   font-weight: 200;
   font-style: italic;
+
+  @mixin smallScreen {
+    font-size: 2rem;
+  }
+  @mixin mediumScreen {
+    font-size: 2.5rem;
+  }
+  @mixin largeScreen {
+    font-size: 3rem;
+  }
 
   b {
     font-family: $poppins;

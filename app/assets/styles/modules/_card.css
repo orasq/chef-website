@@ -1,6 +1,19 @@
 .card {
   background-color: #fff;
 
+  &:last-child {
+    display: none;
+
+    @mixin smallScreen {
+      /* to deal with 2 columns layout, resulting in a 'orphan' element */
+      display: block;
+    }
+
+    @mixin mediumScreen {
+      display: none;
+    }
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -211,5 +224,16 @@
   &__left-icons-wrap {
     grid-area: icons;
     justify-self: flex-end;
+    display: flex;
+    align-items: center;
+  }
+
+  &__large-button-wrap {
+    display: flex;
+    justify-content: center;
+
+    @mixin smallScreen {
+      justify-content: flex-end;
+    }
   }
 }

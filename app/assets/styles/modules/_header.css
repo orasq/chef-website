@@ -11,10 +11,11 @@
     height: 88px;
   }
 
-  &__logo a {
-    /*no flex*/
+  &__logo {
     flex: 1;
-    align-self: flex-end;
+  }
+
+  &__logo a {
     display: flex;
     align-items: flex-end;
     padding-bottom: 20px;
@@ -59,7 +60,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: $mediumGrey;
-    transition: all 0.2s ease-out;
+    transition: all $animFast ease-out;
 
     &::after {
       content: "";
@@ -69,7 +70,7 @@
       height: 1px;
       width: 100%;
       background-color: transparent;
-      transition: all 0.2s ease-out;
+      transition: all $animFast ease-out;
     }
 
     &--selected,
@@ -93,10 +94,14 @@
   }
 
   &__tools {
-    display: flex;
-    align-items: flex-end;
-    padding: 20px 10px;
-    border-right: 1px solid $lightGrey;
+    display: none;
+
+    @mixin smallScreen {
+      display: flex;
+      align-items: flex-end;
+      padding: 20px 10px;
+      border-right: 1px solid $lightGrey;
+    }
 
     @mixin largeScreen {
       padding: 20px 26px;
@@ -108,7 +113,7 @@
     width: 24px;
     margin: 0 10px;
     fill: $darkGrey;
-    transition: fill 0.2s ease-out;
+    transition: fill$animFasts ease-out;
     cursor: pointer;
 
     &:hover {
@@ -140,11 +145,11 @@
     &:hover {
       span {
         background-color: $mediumGrey;
-        transition: background-color 0.2s ease-out;
+        transition: back$animFastnd-color 0.2s ease-out;
         &::before,
         &::after {
           background-color: $mediumGrey;
-          transition: background-color 0.2s ease-out;
+          transition: back$animFastnd-color 0.2s ease-out;
         }
       }
     }
