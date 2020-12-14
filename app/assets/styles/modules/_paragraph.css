@@ -1,0 +1,18 @@
+.paragraph {
+  font-family: $poppins;
+  font-weight: 300;
+  font-size: 1rem;
+
+  &__wrap {
+    /* put margin between elements without affecting the first one
+    margin-top is only applied where the element is preceded by another element*/
+    & > * + * {
+      margin-top: 30px;
+    }
+  }
+
+  &__small {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
+}

@@ -5,6 +5,7 @@
     grid-template-columns: minmax(100px, 240px);
     justify-content: center;
     row-gap: 4vw;
+    column-gap: $columnGap;
 
     @mixin XSmallScreen {
       grid-template-columns: minmax(100px, 350px);
@@ -12,7 +13,6 @@
 
     @mixin smallScreen {
       grid-template-columns: repeat(2, minmax(200px, 1fr));
-      column-gap: 2vw;
     }
 
     @mixin mediumScreen {
@@ -20,7 +20,6 @@
     }
 
     @mixin XLargeScreen {
-      column-gap: 30px;
       row-gap: 55px;
     }
   }

@@ -1,0 +1,32 @@
+.inline-link {
+  position: relative;
+  display: inline-block;
+  padding: 0 3px;
+  font-family: $garamond;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  color: $darkGrey;
+  overflow: hidden;
+  transition: all $animFast ease-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(calc(100% - 1px));
+    height: 100%;
+    width: 100%;
+    background-color: $darkGrey;
+    transition: all $animFast ease-out;
+    z-index: -1;
+  }
+
+  &:hover {
+    &::before {
+      background-color: $yellow;
+      transform: translateY(0);
+    }
+  }
+}

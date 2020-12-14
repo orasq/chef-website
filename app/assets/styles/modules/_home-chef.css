@@ -1,0 +1,57 @@
+.home-chef {
+  &__left-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    grid-column: span 2;
+  }
+
+  &__titles-wrap {
+    @mixin smallScreen {
+      position: absolute;
+      top: 100px;
+      left: 80px;
+      z-index: 1;
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    @mixin XSmallScreen {
+      width: 60%;
+    }
+
+    @mixin smallScreen {
+      width: calc(50% - ($columnGap / 2));
+      height: 50vw;
+      margin-left: auto;
+    }
+
+    @mixin largeScreen {
+      height: 500px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__sign {
+    max-width: 200px;
+  }
+
+  &__right-part {
+    grid-column: span 2;
+    align-self: end;
+    padding-left: 20px;
+    padding-bottom: 10px;
+
+    @mixin mediumScreen {
+      grid-column: span 1;
+    }
+  }
+}

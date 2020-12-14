@@ -32,7 +32,6 @@
   }
 
   &__main-nav {
-    /*flex: 1*/
     flex: 3;
     display: none;
     justify-content: center;
@@ -85,7 +84,6 @@
   }
 
   &__right-part {
-    /*no flex*/
     flex: 1;
     align-self: stretch;
     display: flex;

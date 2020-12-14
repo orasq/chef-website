@@ -2,8 +2,8 @@
 @import "normalize.css";
 
 /* BASE */
-@import "base/_variables";
 @import "base/_mixins";
+@import "base/_variables";
 @import "base/_global";
 @import "base/_utility";
 
@@ -16,3 +16,6 @@
 @import "modules/_circle-card";
 @import "modules/_rating";
 @import "modules/_button";
+@import "modules/_home-chef";
+@import "modules/_paragraph";
+@import "modules/_inline-link";

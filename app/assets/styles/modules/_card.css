@@ -178,7 +178,7 @@
 
     @mixin largeScreen {
       grid-template-columns: repeat(3, 1fr);
-      column-gap: 30px;
+      column-gap: $columnGap;
     }
   }
   &__large &__image-wrap {

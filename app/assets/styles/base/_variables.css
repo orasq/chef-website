@@ -13,3 +13,12 @@ $garamond: "EB Garamond", serif;
 /* ANIMATIONS */
 $animFast: 0.2s;
 $animSlow: 0.5s;
+
+/* LAYOUT */
+$columnGap: 0px;
+@mixin smallScreen {
+  $columnGap: 2vw;
+}
+@mixin XLargeScreen {
+  $columnGap: 30px;
+}

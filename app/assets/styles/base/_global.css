@@ -53,7 +53,8 @@ a {
   color: $darkGrey;
 }
 
-h1 {
+h1,
+h2 {
   font-family: $garamond;
   font-size: 1.8rem;
   font-weight: 200;
