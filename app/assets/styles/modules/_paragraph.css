@@ -5,7 +5,7 @@
 
   &__wrap {
     /* put margin between elements without affecting the first one
-    margin-top is only applied where the element is preceded by another element*/
+    margin-top is only applied where the element is preceded by another element */
     & > * + * {
       margin-top: 30px;
     }

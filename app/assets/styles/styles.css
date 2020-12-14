@@ -20,3 +20,5 @@
 @import "modules/_paragraph";
 @import "modules/_inline-link";
 @import "modules/_cover-image-bloc";
+@import "modules/_view-next";
+@import "modules/_footer";

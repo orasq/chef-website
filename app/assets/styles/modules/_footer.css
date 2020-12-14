@@ -1,0 +1,59 @@
+.footer {
+  width: 100%;
+  background-color: $darkGrey;
+
+  &__social-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: $yellow;
+
+    @mixin XSmallScreen {
+      padding: 20px 40px;
+    }
+
+    @mixin mediumScreen {
+      padding: 30px 55px;
+    }
+  }
+
+  &__youtube-wrap {
+    display: flex;
+    flex-direction: row;
+
+    span {
+      display: none;
+      margin-left: 20px;
+      font-family: $garamond;
+      font-size: 1rem;
+      font-weight: 600;
+      font-style: italic;
+      color: $darkGrey;
+
+      @mixin smallScreen {
+        display: block;
+      }
+    }
+  }
+
+  &__social-icons {
+    height: 15px;
+
+    @mixin XSmallScreen {
+      height: 18px;
+    }
+  }
+
+  &__social-links {
+    /* put margin between elements without affecting the first one
+    margin-left is only applied where the element is preceded by another element */
+    & > * + * {
+      margin-left: 20px;
+    }
+
+    img {
+      max-height: 100%;
+    }
+  }
+}
