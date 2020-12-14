@@ -17,6 +17,7 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 
   &__image-wrap {
@@ -64,6 +65,10 @@
   }
 
   &__text-wrap {
+    /* to make each card's paragraph the same height*/
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding: 10px 18px;
 
     @mixin mediumScreen {
@@ -105,6 +110,7 @@
   }
 
   &__p {
+    flex: 1; /* to make each card's paragraph the same height*/
     padding-right: 20px;
     font-family: $poppins;
     font-size: 0.8rem;
