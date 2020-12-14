@@ -21,17 +21,23 @@
   &__rounded {
     display: inline-flex;
     align-items: center;
-    height: 60px;
-    padding: 0px 35px;
+    height: 50px;
+    padding: 0px 25px;
     border: 1px solid $darkGrey;
     border-radius: 35px;
     background-color: transparent;
     transition: all $animFast ease-out;
 
     font-family: $poppins;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     font-weight: 600;
     text-transform: uppercase;
+
+    @mixin XSmallScreen {
+      font-size: 0.8rem;
+      height: 60px;
+      padding: 0px 35px;
+    }
 
     @mixin mediumScreen {
       height: 70px;
