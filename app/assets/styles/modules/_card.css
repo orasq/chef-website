@@ -1,11 +1,11 @@
 .card {
   background-color: #fff;
 
+  /* to deal with 2 columns layout, and avoid 'orphan' element */
   &:last-child {
     display: none;
 
     @mixin smallScreen {
-      /* to deal with 2 columns layout, resulting in a 'orphan' element */
       display: block;
     }
 
@@ -14,7 +14,7 @@
     }
   }
 
-  &__wrapper {
+  &__wrap {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -44,7 +44,6 @@
       left: 0;
       height: 100%;
       img {
-        position: relative;
         object-fit: cover;
       }
       &::before {
@@ -169,7 +168,7 @@
     background-color: #fff;
   }
 
-  &__large > &__wrapper {
+  &__large > &__wrap {
     display: grid;
     grid-template-columns: 1fr;
 

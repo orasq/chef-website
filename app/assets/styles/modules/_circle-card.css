@@ -1,0 +1,85 @@
+.circle-card {
+  &__wrap {
+    display: grid;
+    grid-template-columns: minmax(100px, 150px);
+    justify-content: center;
+    row-gap: 25px;
+
+    @mixin XSmallScreen {
+      grid-template-columns: minmax(100px, 180px);
+      row-gap: 8vw;
+    }
+
+    @mixin smallScreen {
+      grid-template-columns: repeat(2, minmax(100px, 220px));
+      justify-content: space-around;
+      column-gap: 5vw;
+    }
+
+    @mixin mediumScreen {
+      grid-template-columns: repeat(4, minmax(100px, 1fr));
+    }
+
+    @mixin XLargeScreen {
+      column-gap: 65px;
+    }
+  }
+
+  &__circle {
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%; /* padding is calculated as a percentage of its parent element’s width */
+    }
+
+    figure {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+
+      img {
+        height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin-top: 20px;
+    font-family: $poppins;
+    font-size: 0.8rem;
+    line-height: 1rem;
+
+    @mixin smallScreen {
+      margin-top: 35px;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    h4 {
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+
+      @mixin smallScreen {
+        margin-bottom: 10px;
+      }
+    }
+
+    span {
+      display: inline-block;
+      font-weight: 300;
+      padding: 0 10px;
+    }
+  }
+}
