@@ -1,0 +1,117 @@
+.services {
+  $fading_size: 40px;
+
+  &__carousel {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: $fading_size;
+      background: rgb(220, 225, 231);
+      z-index: 2;
+    }
+
+    &::before {
+      left: 0;
+      background: linear-gradient(
+        90deg,
+        rgba(220, 225, 231, 1) 0%,
+        rgba(220, 225, 231, 0) 100%
+      );
+    }
+
+    &::after {
+      right: 0;
+      background: linear-gradient(
+        270deg,
+        rgba(220, 225, 231, 1) 0%,
+        rgba(220, 225, 231, 0) 100%
+      );
+    }
+  }
+
+  &__wrap {
+    display: grid;
+    grid-auto-columns: 320px;
+    grid-auto-flow: column;
+    column-gap: 20px;
+    padding: 0 $fading_size; /* to avoid the dradient to overlap first and last items */
+    padding-bottom: 20px; /* to avoid scroll bar to overlap items */
+    overflow-x: auto;
+    overscroll-behavior: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline-start: 40px;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    /* add an element after last child to simulate right padding */
+    &:last-child {
+      position: relative;
+    }
+
+    &:last-child::after {
+      content: "";
+      position: relative;
+      height: 100%;
+      left: -20px; /* bug fix: same value as column gap */
+      width: $fading_size;
+    }
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    padding-bottom: 0;
+    border: 1px solid $mediumGrey;
+    scroll-snap-align: start;
+  }
+
+  &__figure {
+    display: flex; /* in order to use "object-fit" on 'img' */
+    top: 0;
+    left: 0;
+    height: 125px;
+    width: 100%;
+    img {
+      min-height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 20px 0px 20px;
+    flex: 1;
+  }
+
+  &__title {
+    height: 60px;
+  }
+
+  &__p,
+  &__btn {
+    font-family: $garamond;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-style: italic;
+  }
+
+  &__p {
+    flex: 1;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    padding-bottom: 20px;
+    border-bottom: 2px solid $darkGrey;
+  }
+}
