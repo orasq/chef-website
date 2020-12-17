@@ -1,6 +1,14 @@
-.services {
-  $fading_size: 40px;
+:root {
+  --fading_size: 20px;
+}
 
+@mixin mediumScreen {
+  :root {
+    --fading_size: 40px;
+  }
+}
+
+.services {
   &__carousel {
     position: relative;
 
@@ -10,7 +18,7 @@
       position: absolute;
       top: 0;
       height: 100%;
-      width: $fading_size;
+      width: var(--fading_size);
       background: rgb(220, 225, 231);
       z-index: 2;
     }
@@ -36,10 +44,10 @@
 
   &__wrap {
     display: grid;
-    grid-auto-columns: 320px;
+    grid-auto-columns: 180px;
     grid-auto-flow: column;
     column-gap: 20px;
-    padding: 0 $fading_size; /* to avoid the dradient to overlap first and last items */
+    padding: 0 var(--fading_size); /* to avoid the dradient to overlap first and last items */
     padding-bottom: 20px; /* to avoid scroll bar to overlap items */
     overflow-x: auto;
     overscroll-behavior: contain;
@@ -48,6 +56,14 @@
 
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+
+    @mixin XSmallScreen {
+      grid-auto-columns: 270px;
+    }
+
+    @mixin mediumScreen {
+      grid-auto-columns: 320px;
+    }
 
     /* add an element after last child to simulate right padding */
     &:last-child {
@@ -58,8 +74,8 @@
       content: "";
       position: relative;
       height: 100%;
-      left: -20px; /* bug fix: same value as column gap */
-      width: $fading_size;
+      left: -20px; /* bug fix: same value as column gap. But why? */
+      width: var(--fading_size);
     }
   }
 
@@ -67,18 +83,27 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 10px;
     padding-bottom: 0;
     border: 1px solid $mediumGrey;
     scroll-snap-align: start;
+
+    @mixin mediumScreen {
+      padding: 15px;
+    }
   }
 
   &__figure {
     display: flex; /* in order to use "object-fit" on 'img' */
     top: 0;
     left: 0;
-    height: 125px;
+    height: 100px;
     width: 100%;
+
+    @mixin mediumScreen {
+      height: 125px;
+    }
+
     img {
       min-height: 100%;
       min-width: 100%;
@@ -89,12 +114,32 @@
   &__text-wrap {
     display: flex;
     flex-direction: column;
-    padding: 35px 20px 0px 20px;
+    padding: 20px 10px 0px 10px;
     flex: 1;
+
+    @mixin mediumScreen {
+      padding: 35px 20px 0px 20px;
+    }
   }
 
   &__title {
-    height: 60px;
+    flex: 1;
+    margin-bottom: 20px;
+    font-family: $poppins;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+
+    @mixin XSmallScreen {
+      height: 50px;
+      margin-bottom: 0;
+    }
+
+    @mixin mediumScreen {
+      height: 60px;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
   }
 
   &__p,
@@ -106,12 +151,25 @@
   }
 
   &__p {
+    display: none;
     flex: 1;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
+
+    @mixin XSmallScreen {
+      display: block;
+    }
+
+    @mixin mediumScreen {
+      margin-bottom: 30px;
+    }
   }
 
   &__btn {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-bottom: 2px solid $darkGrey;
+
+    @mixin XSmallScreen {
+      padding-bottom: 20px;
+    }
   }
 }
