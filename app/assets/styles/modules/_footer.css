@@ -90,16 +90,16 @@
   }
 
   &__grid-left {
-    justify-content: center;
     display: flex;
     flex: 1 1 100%;
+    justify-content: center;
 
     @mixin smallScreen {
       margin-bottom: 50px;
     }
 
     @mixin mediumScreen {
-      justify-self: start;
+      justify-content: flex-start;
       flex: 1 1 33.3333%;
       margin-bottom: 0;
     }
