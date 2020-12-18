@@ -1,0 +1,85 @@
+.icon {
+  display: inline;
+
+  &__video-wrap,
+  &__heart-wrap {
+    position: absolute;
+    z-index: 2; /* to be above image's bottom gradient*/
+  }
+
+  &__video-wrap {
+    bottom: 15px;
+    left: 20px;
+  }
+
+  &__heart-wrap {
+    top: 15px;
+    right: 20px;
+  }
+
+  &__video,
+  &__heart {
+    height: 30px;
+    width: 30px;
+  }
+
+  &__video {
+    fill: #fff;
+  }
+
+  &__heart {
+    transition: all $anim_fast $smooth_bezier;
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 2px;
+    filter: drop-shadow(0 0mm 3mm rgb(0, 0, 0));
+    transition: all $anim_fast $smooth_bezier;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
+      stroke: $red;
+    }
+
+    &--is-active {
+      fill: $red;
+      stroke: $red;
+      filter: drop-shadow(0 0mm 3mm rgb(0, 0, 0, 0));
+      animation-name: heart_bounce;
+      animation-duration: $anim_slow;
+      animation-timing-function: ease-out;
+
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+
+  /* if doesn't also have class of 'active' */
+  &__heart--dark:not(&__heart--is-active) {
+    stroke: $dark_grey;
+    filter: drop-shadow(0 0mm 3mm rgb(0, 0, 0, 0));
+
+    &:hover {
+      stroke: $red;
+    }
+  }
+}
+
+@keyframes heart_bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

@@ -6,12 +6,12 @@
     <meta name="keywords" content="chef, recipes" />
     <meta name="description" content="Website with chef's recipes" />
   </head>
-  <body class="menu--is-open">
+  <body class="menu--is-ope">
     <header class="wrapper">
       <div class="header">
         <div class="header__logo">
           <a href="#">
-            <img src="./assets/images/logo.svg" alt="Panos Ioannidis">
+            <img data-pin-nopin="true" src="./assets/images/logo.svg" alt="Panos Ioannidis">
           </a>
         </div>
         <nav class="header__main-nav">
@@ -56,18 +56,18 @@
         <h1 class="uppercase mt-xs mb-xxs">Tastefull <b>recipes</b></h1>
         <span class="spantitle__sansserif-m uppercase">By Panos Ioannidis</span>
       </div>
-      <div class="grid grid__3col mb-m">
-        <a href="#" class="card__large">
+      <div class="card__main-wrap grid grid__3col mb-m">
+        <a href="#" class="card__large card">
           <div class="card__wrap">
             <div class="card__image-wrap">
                 <figure>
-                  <img
+                  <img data-pin-nopin="true"
                     src="./assets/images/recipe-1.jpg"
                     alt="Vegan blueberry pancake"
                   />
                 </figure>
-                <div class="card__video-i-wrap">
-                  <svg class="card__video-icon" viewBox="0 0 24 24">
+                <div class="icon__video-wrap">
+                  <svg class="icon__video" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"
@@ -86,11 +86,9 @@
                   <span class="rating__count">67</span>
                 </div>
                 <div class="card__left-icons-wrap">
-                  <svg class="card__heart-icon card__heart-icon--dark" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0V0z" fill="none" />
-                    <path
-                      d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
-                    />
+                  <svg  class="icon__heart icon__heart--dark"  viewBox="0 0 24 24">
+
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                   </svg>
                   <svg
                     class="card__menu-icon"
@@ -123,13 +121,13 @@
             <div class="card__image-wrap">
               <a href="#">
                 <figure>
-                  <img
+                  <img data-pin-nopin="true"
                     src="./assets/images/recipe-2.jpg"
                     alt="Pumpkin soupwith nutmeg"
                   />
                 </figure>
-                <div class="card__video-i-wrap">
-                  <svg class="card__video-icon" viewBox="0 0 24 24">
+                <div class="icon__video-wrap">
+                  <svg class="icon__video" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"
@@ -138,12 +136,10 @@
                 </div>
               </a>
 
-              <div class="card__heart-i-wrap">
-                <svg class="card__heart-icon card__heart-icon--shadow" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0V0z" fill="none" />
-                  <path
-                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
-                  />
+              <div class="icon__heart-wrap">
+                 <svg  class="icon__heart icon__heart--is-active"  viewBox="0 0 24 24">
+
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
               </div>
             </div>
@@ -180,29 +176,18 @@
         <div class="card">
           <div class="card__wrap">
             <div class="card__image-wrap">
-              <a href="#">
+              <a href="/">
                 <figure>
-                  <img
+                  <img data-pin-nopin="true"
                     src="./assets/images/recipe-3.jpg"
                     alt="Parmezan cruststuffed chickenloaf"
                   />
                 </figure>
-                <div class="card__video-i-wrap">
-                  <svg class="card__video-icon" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0V0z" fill="none" />
-                    <path
-                      d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"
-                    />
-                  </svg>
-                </div>
               </a>
 
-              <div class="card__heart-i-wrap">
-                <svg class="card__heart-icon card__heart-icon--shadow" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0V0z" fill="none" />
-                  <path
-                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
-                  />
+              <div class="icon__heart-wrap">
+                <svg class="icon__heart"  viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
               </div>
             </div>
@@ -241,13 +226,13 @@
             <div class="card__image-wrap">
               <a href="#">
                 <figure>
-                  <img
+                  <img data-pin-nopin="true"
                     src="./assets/images/recipe-4.jpg"
                     alt="Vegan peanut butter cookies"
                   />
                 </figure>
-                <div class="card__video-i-wrap">
-                  <svg class="card__video-icon" viewBox="0 0 24 24">
+                <div class="icon__video-wrap">
+                  <svg class="icon__video" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"
@@ -256,12 +241,9 @@
                 </div>
               </a>
 
-              <div class="card__heart-i-wrap">
-                <svg class="card__heart-icon card__heart-icon--shadow" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0V0z" fill="none" />
-                  <path
-                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
-                  />
+              <div class="icon__heart-wrap">
+                 <svg  class="icon__heart"  viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
               </div>
             </div>
@@ -300,13 +282,13 @@
             <div class="card__image-wrap">
               <a href="#">
                 <figure>
-                  <img
+                  <img data-pin-nopin="true"
                     src="./assets/images/recipe-5.jpg"
                     alt="Zesty Lime Shrimp and Avocado Salad"
                   />
                 </figure>
-                <div class="card__video-i-wrap">
-                  <svg class="card__video-icon" viewBox="0 0 24 24">
+                <div class="icon__video-wrap">
+                  <svg class="icon__video" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"
@@ -315,12 +297,9 @@
                 </div>
               </a>
 
-              <div class="card__heart-i-wrap">
-                <svg class="card__heart-icon card__heart-icon--shadow" viewBox="0 0 24 24">
-                  <path d="M0 0h24v24H0V0z" fill="none" />
-                  <path
-                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
-                  />
+              <div class="icon__heart-wrap">
+                 <svg  class="icon__heart"  viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
               </div>
             </div>
@@ -358,7 +337,7 @@
 
       <div class="text-center">
         <a href="#" class="button__rounded">
-          View all recipes
+          <span>View all recipes</span>
         </a>
       </div>
     </section>
@@ -369,7 +348,7 @@
         <a href="#" class="circle-card">
           <div class="circle-card__circle">
             <figure>
-              <img
+              <img data-pin-nopin="true"
                 src="./assets/images/cat-dessert.jpg"
                 alt="dessert"
               />
@@ -383,7 +362,7 @@
         <a href="#" class="circle-card">
           <div class="circle-card__circle">
             <figure>
-              <img
+              <img data-pin-nopin="true"
                 src="./assets/images/cat-smoothie.jpg"
                 alt="smoothie"
               />
@@ -397,7 +376,7 @@
         <a href="#" class="circle-card">
           <div class="circle-card__circle">
             <figure>
-              <img
+              <img data-pin-nopin="true"
                 src="./assets/images/cat-special.jpg"
                 alt="christmas cookies"
               />
@@ -411,7 +390,7 @@
         <a href="#" class="circle-card">
           <div class="circle-card__circle">
             <figure>
-              <img
+              <img data-pin-nopin="true"
                 src="./assets/images/cat-burger.jpg"
                 alt="burger"
               />
@@ -442,7 +421,7 @@
               </svg>
           </div>
           <figure class="home-chef__image">
-            <img src="./assets/images/home-panos-ioannidis.jpg" alt="Panos Ioannidis">
+            <img data-pin-nopin="true" src="./assets/images/home-panos-ioannidis.jpg" alt="Panos Ioannidis">
           </figure>
         </div>
         <div class="home-chef__right-part">
@@ -464,7 +443,7 @@
         <div class="services__wrap">
           <a class="services__card" href="#">
             <figure class="services__figure">
-              <img src="./assets/images/service-1.jpg" alt="service 1">
+              <img data-pin-nopin="true" src="./assets/images/service-1.jpg" alt="service 1">
             </figure>
             <div class="services__text-wrap">
               <h4 class="services__title uppercase">
@@ -480,7 +459,7 @@
           </a>
           <a class="services__card" href="#">
             <figure class="services__figure">
-              <img src="./assets/images/service-2.jpg" alt="service 2">
+              <img data-pin-nopin="true" src="./assets/images/service-2.jpg" alt="service 2">
             </figure>
             <div class="services__text-wrap">
               <h4 class="services__title uppercase">
@@ -496,7 +475,7 @@
           </a>
           <a class="services__card" href="#">
             <figure class="services__figure">
-              <img src="./assets/images/service-3.jpg" alt="service 3">
+              <img data-pin-nopin="true" src="./assets/images/service-3.jpg" alt="service 3">
             </figure>
             <div class="services__text-wrap">
               <h4 class="services__title uppercase">
@@ -512,7 +491,7 @@
           </a>
           <a class="services__card" href="#">
             <figure class="services__figure">
-              <img src="./assets/images/service-4.jpg" alt="service 4">
+              <img data-pin-nopin="true" src="./assets/images/service-4.jpg" alt="service 4">
             </figure>
             <div class="services__text-wrap">
               <h4 class="services__title uppercase">
@@ -528,7 +507,7 @@
           </a>
           <a class="services__card" href="#">
             <figure class="services__figure">
-              <img src="./assets/images/service-5.jpg" alt="service 5">
+              <img data-pin-nopin="true" src="./assets/images/service-5.jpg" alt="service 5">
             </figure>
             <div class="services__text-wrap">
               <h4 class="services__title uppercase">
@@ -544,7 +523,7 @@
           </a>
           <a class="services__card" href="#">
             <figure class="services__figure">
-              <img src="./assets/images/service-6.jpg" alt="service 6">
+              <img data-pin-nopin="true" src="./assets/images/service-6.jpg" alt="service 6">
             </figure>
             <div class="services__text-wrap">
               <h4 class="services__title uppercase">
@@ -560,7 +539,7 @@
           </a>
           <a class="services__card" href="#">
             <figure class="services__figure">
-              <img src="./assets/images/service-7.jpg" alt="service 7">
+              <img data-pin-nopin="true" src="./assets/images/service-7.jpg" alt="service 7">
             </figure>
             <div class="services__text-wrap">
               <h4 class="services__title uppercase">
@@ -580,12 +559,12 @@
 
     <section class="wrapper mb-xl">
       <div class="cover-image-bloc text-center">
-        <img class="cover-image-bloc__image" src="./assets/images/food-top.png" alt="food top view">
+        <img data-pin-nopin="true" class="cover-image-bloc__image" src="./assets/images/food-top.png" alt="food top view">
         <div class="cover-image-bloc__content">
           <span class="spantitle__sansserif-m uppercase cover-image-bloc__cat-title">suggested menus</span>
           <h2 class="uppercase mt-s mb-s">Your sunday<br /> brunch <b>menu</b></h2>
           <a href="#" class="button__rounded button__yellow">
-            View the menu
+            <span>View the menu</span>
           </a>
         </div>
       </div>
@@ -600,18 +579,18 @@
       <div class="wrapper">
         <div class="footer__social-wrap mb-l">
           <a href="#" class="footer__youtube-wrap">
-            <img class="footer__social-icons" src="./assets/images/youtube-logo.png" alt="youtube icon">
+            <img data-pin-nopin="true" class="footer__social-icons" src="./assets/images/youtube-logo.png" alt="youtube icon">
             <span>Sign up for more recipes!</span>
           </a>
           <div class="footer__social-links">
             <a href="#">
-              <img class="footer__social-icons" src="./assets/images/facebook-logo.png" alt="facebook icon">
+              <img data-pin-nopin="true" class="footer__social-icons" src="./assets/images/facebook-logo.png" alt="facebook icon">
             </a>
             <a href="#">
-              <img class="footer__social-icons" src="./assets/images/linkedin-logo.png" alt="linkedin icon">
+              <img data-pin-nopin="true" class="footer__social-icons" src="./assets/images/linkedin-logo.png" alt="linkedin icon">
             </a>
             <a href="#">
-              <img class="footer__social-icons" src="./assets/images/instagram-logo.png" alt="instagram icon">
+              <img data-pin-nopin="true" class="footer__social-icons" src="./assets/images/instagram-logo.png" alt="instagram icon">
             </a>
             
           </div>
@@ -633,7 +612,7 @@
             </span>
             <span class="footer__text mb-s">Subscribe to our newsletter</span>
             <a href="#" class="button__rounded button__yellow">
-              Register now
+              <span>Register now</span>
             </a>
           </div>
           <div class="footer__grid-right">
@@ -699,7 +678,7 @@
         </nav>
         <a href="#" class="overlay-menu__sidebar">
           <figure class="overlay-menu__sidebar-image">
-            <img src="./assets/images/menu-plate.png" alt="salmon plate">
+            <img data-pin-nopin="true" src="./assets/images/menu-plate.png" alt="salmon plate">
           </figure>
           <div class="overlay-menu__sidebar-text-wrap">
             <span class="overlay-menu__sidebar-title">Complete<br /> menu proposal</span>

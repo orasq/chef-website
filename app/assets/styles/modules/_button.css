@@ -11,14 +11,22 @@
       height: 68px;
       width: 68px;
     }
+
+    &:hover {
+      .button__circle-arrow {
+        transform: translateX(10px);
+      }
+    }
   }
 
   &__circle-arrow {
     font-size: 1.2rem;
     color: $dark_grey;
+    transition: transform $anim_slow $smooth_bezier;
   }
 
   &__rounded {
+    position: relative;
     display: inline-flex;
     align-items: center;
     height: 50px;
@@ -26,10 +34,12 @@
     border: 1px solid $dark_grey;
     border-radius: 35px;
     background-color: transparent;
+    overflow: hidden;
     transition: all $anim_fast ease-out;
 
     font-family: $poppins;
     font-size: 0.65rem;
+    line-height: 1rem;
     font-weight: 600;
     text-transform: uppercase;
 
@@ -47,6 +57,28 @@
     &:hover {
       background-color: $yellow;
       border-color: $yellow;
+
+      span::after {
+        opacity: 1;
+        right: -35px;
+      }
+    }
+    @mixin m_screen {
+      span {
+        position: relative;
+        display: inline-block;
+
+        &::after {
+          content: "⟶";
+          position: absolute;
+          top: -1px;
+          right: 0px;
+          opacity: 0;
+          font-size: 1rem;
+          line-height: 1rem;
+          transition: all $anim_fast $smooth_bezier;
+        }
+      }
     }
   }
 

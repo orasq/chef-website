@@ -1,5 +1,12 @@
 .card {
   background-color: #fff;
+  transition: all $anim_fast ease-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1);
+    box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.2);
+  }
 
   /* to deal with 2 columns layout, and avoid 'orphan' element */
   &:last-child {
@@ -12,6 +19,12 @@
     @mixin m_screen {
       display: none;
     }
+  }
+
+  /* select all item except the one beeing hovered */
+  &__main-wrap:hover &:not(:hover) {
+    opacity: 0.5;
+    filter: blur(4px);
   }
 
   &__wrap {
@@ -124,42 +137,6 @@
       font-size: 1rem;
       line-height: 1.5rem;
     }
-  }
-
-  &__video-i-wrap,
-  &__heart-i-wrap {
-    position: absolute;
-    z-index: 2; /* to be above image's bottom gradient*/
-  }
-
-  &__video-i-wrap {
-    bottom: 15px;
-    left: 20px;
-  }
-
-  &__heart-i-wrap {
-    top: 15px;
-    right: 20px;
-  }
-
-  &__heart-icon {
-    cursor: pointer;
-  }
-
-  &__video-icon,
-  &__heart-icon {
-    height: 30px;
-    width: 30px;
-    fill: #fff;
-  }
-
-  &__video-icon--dark,
-  &__heart-icon--dark {
-    fill: $dark_grey;
-  }
-
-  &__heart-icon--shadow {
-    filter: drop-shadow(0 0mm 3mm rgb(0, 0, 0));
   }
 }
 

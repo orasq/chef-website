@@ -8,8 +8,8 @@ Add "lazyload" class to <img> tags, and change 'srcset' to 'data-srcset'*/
 import "lazysizes";
 
 // Function import
-import FunctionBase from "./modules/FunctionBase";
-FunctionBase();
+import HeartIcon from "./modules/HeartIcon";
+HeartIcon();
 
 // Class import
 import ClassBase from "./modules/ClassBase";
