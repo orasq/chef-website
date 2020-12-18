@@ -121,10 +121,6 @@
     &:hover {
       fill: $medium_grey;
     }
-
-    @mixin l_screen {
-      margin: 0 4px;
-    }
   }
 
   &__burger {

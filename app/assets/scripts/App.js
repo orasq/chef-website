@@ -11,6 +11,9 @@ import "lazysizes";
 import HeartIcon from "./modules/HeartIcon";
 HeartIcon();
 
+import OverlayMenu from "./modules/OverlayMenu";
+OverlayMenu();
+
 // Class import
 import ClassBase from "./modules/ClassBase";
 new ClassBase(/*arg1, arg2*/);

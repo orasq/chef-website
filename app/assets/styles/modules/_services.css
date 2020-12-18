@@ -19,7 +19,6 @@
       top: 0;
       height: 100%;
       width: var(--fading_size);
-      background: rgb(220, 225, 231);
       z-index: 2;
     }
 
@@ -27,8 +26,8 @@
       left: 0;
       background: linear-gradient(
         90deg,
-        rgba(220, 225, 231, 1) 0%,
-        rgba(220, 225, 231, 0) 100%
+        rgba($bg_light_grey, 1) 0%,
+        rgba($bg_light_grey, 0) 100%
       );
     }
 
@@ -36,8 +35,8 @@
       right: 0;
       background: linear-gradient(
         270deg,
-        rgba(220, 225, 231, 1) 0%,
-        rgba(220, 225, 231, 0) 100%
+        rgba($bg_light_grey, 1) 0%,
+        rgba($bg_light_grey, 0) 100%
       );
     }
   }
@@ -85,11 +84,18 @@
     flex-direction: column;
     padding: 10px;
     padding-bottom: 0;
-    border: 1px solid $medium_grey;
+    color: $dark_grey;
     scroll-snap-align: start;
+    /* box-shadow instead of border to be able to animate it on hover without changing card's layout */
+    box-shadow: inset 0 0 0 1px $medium_grey;
+    transition: all $anim_fast ease-out;
 
     @mixin m_screen {
       padding: 15px;
+    }
+
+    &:hover {
+      background-color: $yellow;
     }
   }
 

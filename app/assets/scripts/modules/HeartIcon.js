@@ -1,8 +1,8 @@
 const HeartIcon = () => {
   const hearts = document.querySelectorAll(".icon__heart");
 
-  function toggleClass() {
-    console.log("works !");
+  function toggleClass(e) {
+    e.preventDefault(); // avoid page's change when clicking on the icon
     this.classList.toggle("icon__heart--is-active");
   }
 
