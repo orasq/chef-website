@@ -1,5 +1,5 @@
 .overlay-menu {
-  display: grid;
+  display: none;
   place-content: center;
   position: absolute;
   top: 0;
@@ -14,6 +14,7 @@
   transition: box-shadow $anim_fast ease-out;
 
   &--is-open {
+    display: grid;
     box-shadow: inset 0 0 0 10px #fff;
 
     @mixin xl_screen {
@@ -27,7 +28,12 @@
     right: 20px;
     height: 30px;
     width: 30px;
+    transition: transform $anim_fast $smooth_bezier;
     cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
     @mixin xs_screen {
       top: 30px;
