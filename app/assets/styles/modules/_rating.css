@@ -10,7 +10,7 @@
 
   &__star {
     font-size: 0.7rem;
-    color: $lightGrey;
+    color: $light_grey;
 
     &--active {
       color: $yellow;
@@ -21,6 +21,6 @@
     margin-left: 10px;
     font-family: $poppins;
     font-size: 0.75rem;
-    color: $lightGrey;
+    color: $light_grey;
   }
 }

@@ -6,7 +6,7 @@
     <meta name="keywords" content="chef, recipes" />
     <meta name="description" content="Website with chef's recipes" />
   </head>
-  <body>
+  <body class="menu--is-open">
     <div class="wrapper">
       <header class="header">
         <div class="header__logo">
@@ -664,8 +664,57 @@
         </div>
       </div>
     </footer>
-    <div class="overlay-menu">
-
+    
+    <div class="overlay-menu overlay-menu--is-open">
+      <div class="overlay-menu__close-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0V0z" fill="none"/>
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+        </svg>
+      </div>
+      <div class="overlay-menu__content-wrap">
+        <nav class="overlay-menu__nav">
+          <ul>
+            <li class="overlay-menu__item"><a href="#">Home</a></li>
+            <li class="overlay-menu__item">
+              <a href="#">The Chef</a>
+              <ul class="overlay-menu__submenu">
+                <li class="overlay-menu__submenu-item"><a href="#">OVIO | RESTAURANT</a></li>
+                <li class="overlay-menu__submenu-item"><a href="#">Risotti | The Book</a></li>
+              </ul>
+            </li>
+            <li class="overlay-menu__item"><a href="#">Recipes</a></li>
+            <li class="overlay-menu__item">
+              <a href="#">Gastropedia</a>
+              <ul class="overlay-menu__submenu">
+                <li class="overlay-menu__submenu-item"><a href="#">Dictionary A-Z</a></li>
+                <li class="overlay-menu__submenu-item"><a href="#">How-to</a></li>
+                <li class="overlay-menu__submenu-item"><a href="#">Tips</a></li>
+              </ul>
+            </li>
+            <li class="overlay-menu__item"><a href="#">Videos</a></li>
+            <li class="overlay-menu__item">
+              <a href="#">Youtube</a>
+              <ul class="overlay-menu__submenu">
+                <li class="overlay-menu__submenu-item"><a href="#">Instagram</a></li>
+                <li class="overlay-menu__submenu-item"><a href="#">Facebook</a></li>
+              </ul>
+            </li>
+            <li class="overlay-menu__item">Nea & Food Blog</li>
+            <li class="overlay-menu__item">Contact us</li>
+          </ul>
+        </nav>
+        <a href="#" class="overlay-menu__sidebar">
+          <figure class="overlay-menu__sidebar-image">
+            <img src="./assets/images/menu-plate.png" alt="salmon plate">
+          </figure>
+          <div class="overlay-menu__sidebar-text-wrap">
+            <span class="overlay-menu__sidebar-title">Complete<br /> menu proposal</span>
+            <span class="overlay-menu__sidebar-text">Salmon with vegetable salad</span>
+            <span class="overlay-menu__sidebar-btn">⟶</span>
+          </div>
+        </a>
+      </div>
     </div>
   </body>
 </html>

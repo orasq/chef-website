@@ -5,22 +5,22 @@
     justify-content: center;
     row-gap: 25px;
 
-    @mixin XSmallScreen {
+    @mixin xs_screen {
       grid-template-columns: minmax(100px, 180px);
       row-gap: 8vw;
     }
 
-    @mixin smallScreen {
+    @mixin s_screen {
       grid-template-columns: repeat(2, minmax(100px, 220px));
       justify-content: space-around;
       column-gap: 5vw;
     }
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       grid-template-columns: repeat(4, minmax(100px, 1fr));
     }
 
-    @mixin XLargeScreen {
+    @mixin xl_screen {
       column-gap: 65px;
     }
   }
@@ -60,7 +60,7 @@
     font-size: 0.8rem;
     line-height: 1rem;
 
-    @mixin smallScreen {
+    @mixin s_screen {
       margin-top: 35px;
       font-size: 1rem;
       line-height: 1.5rem;
@@ -71,7 +71,7 @@
       text-transform: uppercase;
       margin-bottom: 7px;
 
-      @mixin smallScreen {
+      @mixin s_screen {
         margin-bottom: 10px;
       }
     }

@@ -5,9 +5,9 @@
   align-items: flex-end;
   height: 70px;
   padding-top: 4px;
-  border-bottom: 1px solid $lightGrey;
+  border-bottom: 1px solid $light_grey;
 
-  @mixin largeScreen {
+  @mixin l_screen {
     height: 88px;
   }
 
@@ -22,11 +22,11 @@
     font-family: $poppins;
     font-size: 1rem;
     font-weight: 400;
-    color: $darkGrey;
+    color: $dark_grey;
     text-transform: uppercase;
     text-decoration: none;
 
-    @mixin XLargeScreen {
+    @mixin xl_screen {
       font-size: 1.2rem;
     }
 
@@ -41,7 +41,7 @@
     justify-content: center;
     padding-bottom: 20px;
 
-    @mixin largeScreen {
+    @mixin l_screen {
       display: flex;
     }
 
@@ -62,8 +62,8 @@
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
-    color: $mediumGrey;
-    transition: all $animFast ease-out;
+    color: $medium_grey;
+    transition: all $anim_fast ease-out;
 
     &::after {
       content: "";
@@ -73,16 +73,16 @@
       height: 1px;
       width: 100%;
       background-color: transparent;
-      transition: all $animFast ease-out;
+      transition: all $anim_fast ease-out;
     }
 
     &--selected,
     &:hover {
-      color: $darkGrey;
+      color: $dark_grey;
       &::after {
         content: "";
         height: 3px;
-        background-color: $darkGrey;
+        background-color: $dark_grey;
       }
     }
   }
@@ -98,14 +98,14 @@
   &__tools {
     display: none;
 
-    @mixin smallScreen {
+    @mixin s_screen {
       display: flex;
       align-items: flex-end;
       padding: 20px 10px;
-      border-right: 1px solid $lightGrey;
+      border-right: 1px solid $light_grey;
     }
 
-    @mixin largeScreen {
+    @mixin l_screen {
       padding: 20px 26px;
     }
   }
@@ -114,15 +114,15 @@
     height: 24px;
     width: 24px;
     margin: 0 10px;
-    fill: $darkGrey;
-    transition: fill$animFasts ease-out;
+    fill: $dark_grey;
+    transition: fill$anim_fasts ease-out;
     cursor: pointer;
 
     &:hover {
-      fill: $mediumGrey;
+      fill: $medium_grey;
     }
 
-    @mixin largeScreen {
+    @mixin l_screen {
       margin: 0 4px;
     }
   }
@@ -132,7 +132,7 @@
     align-items: flex-end;
     padding: 20px;
 
-    @mixin largeScreen {
+    @mixin l_screen {
       padding: 20px 26px;
     }
   }
@@ -146,12 +146,12 @@
 
     &:hover {
       span {
-        background-color: $mediumGrey;
-        transition: back$animFastnd-color 0.2s ease-out;
+        background-color: $medium_grey;
+        transition: back$anim_fastnd-color 0.2s ease-out;
         &::before,
         &::after {
-          background-color: $mediumGrey;
-          transition: back$animFastnd-color 0.2s ease-out;
+          background-color: $medium_grey;
+          transition: back$anim_fastnd-color 0.2s ease-out;
         }
       }
     }
@@ -161,7 +161,7 @@
       display: inline-block;
       height: 2px;
       width: 100%;
-      background-color: $darkGrey;
+      background-color: $dark_grey;
 
       &::before,
       &::after {
@@ -169,7 +169,7 @@
         height: 2px;
         width: 30px;
         position: absolute;
-        background-color: $darkGrey;
+        background-color: $dark_grey;
       }
 
       &::before {

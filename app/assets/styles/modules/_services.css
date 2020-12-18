@@ -2,7 +2,7 @@
   --fading_size: 20px;
 }
 
-@mixin mediumScreen {
+@mixin m_screen {
   :root {
     --fading_size: 40px;
   }
@@ -57,11 +57,11 @@
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 
-    @mixin XSmallScreen {
+    @mixin xs_screen {
       grid-auto-columns: 270px;
     }
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       grid-auto-columns: 320px;
     }
 
@@ -85,10 +85,10 @@
     flex-direction: column;
     padding: 10px;
     padding-bottom: 0;
-    border: 1px solid $mediumGrey;
+    border: 1px solid $medium_grey;
     scroll-snap-align: start;
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       padding: 15px;
     }
   }
@@ -100,7 +100,7 @@
     height: 100px;
     width: 100%;
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       height: 125px;
     }
 
@@ -117,7 +117,7 @@
     padding: 20px 10px 0px 10px;
     flex: 1;
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       padding: 35px 20px 0px 20px;
     }
   }
@@ -130,12 +130,12 @@
     font-size: 1rem;
     line-height: 1.2rem;
 
-    @mixin XSmallScreen {
+    @mixin xs_screen {
       height: 50px;
       margin-bottom: 0;
     }
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       height: 60px;
       font-size: 1.2rem;
       line-height: 1.5rem;
@@ -155,20 +155,20 @@
     flex: 1;
     margin-bottom: 18px;
 
-    @mixin XSmallScreen {
+    @mixin xs_screen {
       display: block;
     }
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       margin-bottom: 30px;
     }
   }
 
   &__btn {
     padding-bottom: 10px;
-    border-bottom: 2px solid $darkGrey;
+    border-bottom: 2px solid $dark_grey;
 
-    @mixin XSmallScreen {
+    @mixin xs_screen {
       padding-bottom: 20px;
     }
   }

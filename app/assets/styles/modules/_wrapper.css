@@ -4,11 +4,11 @@
   margin-right: auto;
   padding: 0 15px;
 
-  @mixin largeScreen {
+  @mixin l_screen {
     padding: 0 30px;
   }
 
-  @mixin XLargeScreen {
+  @mixin xl_screen {
     padding: 0;
   }
 }

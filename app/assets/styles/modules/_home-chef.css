@@ -8,7 +8,7 @@
   }
 
   &__titles-wrap {
-    @mixin smallScreen {
+    @mixin s_screen {
       position: absolute;
       top: 100px;
       left: 80px;
@@ -19,17 +19,17 @@
   &__image {
     width: 100%;
 
-    @mixin XSmallScreen {
+    @mixin xs_screen {
       width: 60%;
     }
 
-    @mixin smallScreen {
-      width: calc(50% - ($columnGap / 2));
+    @mixin s_screen {
+      width: calc(50% - ($column_gap / 2));
       height: 50vw;
       margin-left: auto;
     }
 
-    @mixin largeScreen {
+    @mixin l_screen {
       height: 500px;
     }
 
@@ -50,7 +50,7 @@
     padding-left: 20px;
     padding-bottom: 10px;
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       grid-column: span 1;
     }
   }

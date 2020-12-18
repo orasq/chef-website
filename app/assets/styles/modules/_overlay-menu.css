@@ -1,0 +1,229 @@
+.overlay-menu {
+  display: grid;
+  place-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $menu_light_grey;
+  z-index: 9999;
+
+  /* use box-shadow instead of border for performances purposes */
+  box-shadow: inset 0 0 0 0 #fff;
+  transition: box-shadow $anim_fast ease-out;
+
+  &--is-open {
+    box-shadow: inset 0 0 0 10px #fff;
+
+    @mixin xl_screen {
+      box-shadow: inset 0 0 0 20px #fff;
+    }
+  }
+
+  &__close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+
+    @mixin xs_screen {
+      top: 30px;
+      right: 30px;
+    }
+
+    @mixin xl_screen {
+      top: 50px;
+      right: 50px;
+      height: 50px;
+      width: 50px;
+    }
+
+    svg {
+      fill: $dark_grey;
+    }
+  }
+
+  &__content-wrap {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 85vw;
+
+    /* in case menu is too high */
+    overflow-y: scroll;
+    scrollbar-width: none;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    @mixin l_screen {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 30px;
+    }
+
+    @mixin xl_screen {
+      width: 70vw;
+    }
+  }
+
+  &__nav {
+    @mixin m_screen {
+      grid-column: span 2;
+      column-count: 2;
+      column-gap: 20px;
+    }
+
+    @mixin xl_screen {
+      column-gap: 50px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 28px;
+    font-family: $poppins;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    list-style: none;
+
+    @mixin m_screen {
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+    }
+
+    @mixin xl_screen {
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__submenu {
+    display: none;
+    margin-left: 15px;
+    break-inside: avoid; /* avoid 'li' of submeu to split in different columns */
+
+    @mixin m_screen {
+      display: block;
+    }
+
+    @mixin xl_screen {
+      margin-left: 30px;
+    }
+  }
+
+  &__submenu-item {
+    margin-top: 20px;
+    font-family: $poppins;
+    font-size: 1rem;
+    font-weight: 200;
+    list-style: none;
+
+    @mixin xl_screen {
+      margin-top: 30px;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__sidebar {
+    position: relative;
+    justify-self: center;
+    place-self: center;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    max-width: 250px;
+    padding-bottom: 50px;
+
+    text-align: center;
+    overflow: visible;
+
+    @mixin l_screen {
+      display: flex;
+    }
+
+    @mixin xl_screen {
+      max-width: 300px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      width: 80%;
+      background-color: #fff;
+      transition: background-color $anim_fast ease-out;
+    }
+
+    &:hover {
+      &::after {
+        background-color: $yellow;
+      }
+
+      .overlay-menu__sidebar-image {
+        transform: scale(1.1);
+      }
+
+      .overlay-menu__sidebar-btn {
+        transform: translateX(10px);
+      }
+    }
+  }
+
+  &__sidebar-image {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    transition: transform $anim_slow $smooth_bezier;
+    z-index: 2;
+
+    img {
+      filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3));
+    }
+  }
+
+  &__sidebar-text-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 70%;
+    z-index: 2;
+
+    @mixin xl_screen {
+      max-width: 70%;
+    }
+  }
+
+  &__sidebar-title {
+    margin-bottom: 10px;
+    font-family: $poppins;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__sidebar-text {
+    margin-bottom: 10px;
+    font-family: $poppins;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__sidebar-btn {
+    font-size: 1.2rem;
+    transition: transform $anim_slow $smooth_bezier;
+  }
+}

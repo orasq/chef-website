@@ -3,7 +3,7 @@
   padding: 60px 20px;
   background-color: #000;
 
-  @mixin smallScreen {
+  @mixin s_screen {
     padding: 100px 20px;
   }
 

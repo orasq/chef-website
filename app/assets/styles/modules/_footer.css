@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  background-color: $darkGrey;
+  background-color: $dark_grey;
   color: #fff;
 
   &__social-wrap {
@@ -9,13 +9,13 @@
     justify-content: space-between;
     padding: 15px 20px;
     background-color: $yellow;
-    color: $darkGrey;
+    color: $dark_grey;
 
-    @mixin XSmallScreen {
+    @mixin xs_screen {
       padding: 20px 40px;
     }
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       padding: 30px 55px;
     }
   }
@@ -32,7 +32,7 @@
       font-weight: 600;
       font-style: italic;
 
-      @mixin smallScreen {
+      @mixin s_screen {
         display: block;
       }
     }
@@ -41,7 +41,7 @@
   &__social-icons {
     height: 15px;
 
-    @mixin XSmallScreen {
+    @mixin xs_screen {
       height: 18px;
     }
   }
@@ -64,15 +64,15 @@
     align-items: center;
     flex-wrap: wrap;
 
-    @mixin smallScreen {
+    @mixin s_screen {
       flex-direction: row;
     }
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       flex-wrap: nowrap;
     }
 
-    @mixin largeScreen {
+    @mixin l_screen {
       padding: 25px;
     }
 
@@ -83,7 +83,7 @@
     & > * + * {
       margin-top: 40px;
 
-      @mixin smallScreen {
+      @mixin s_screen {
         margin-top: 0;
       }
     }
@@ -94,11 +94,11 @@
     flex: 1 1 100%;
     justify-content: center;
 
-    @mixin smallScreen {
+    @mixin s_screen {
       margin-bottom: 50px;
     }
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       justify-content: flex-start;
       flex: 1 1 33.3333%;
       margin-bottom: 0;
@@ -109,7 +109,7 @@
     text-align: center;
     flex: 1 1 50%;
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       flex: 1 1 33.3333%;
     }
   }
@@ -118,7 +118,7 @@
     text-align: center;
     flex: 1 1 50%;
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       justify-self: end;
       text-align: right;
       flex: 1 1 33.3333%;
@@ -137,20 +137,20 @@
     column-gap: 30px;
     margin-bottom: -$li_marginb;
 
-    @mixin smallScreen {
+    @mixin s_screen {
       column-count: 3;
     }
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       column-gap: 15px;
       column-count: 2;
     }
 
-    @mixin largeScreen {
+    @mixin l_screen {
       column-gap: 10px;
     }
 
-    @mixin XLargeScreen {
+    @mixin xl_screen {
       column-gap: 30px;
     }
 
@@ -178,7 +178,7 @@
     font-style: italic;
     text-transform: uppercase;
 
-    @mixin largeScreen {
+    @mixin l_screen {
       font-size: 2.3rem;
     }
 
@@ -203,7 +203,7 @@
     text-transform: uppercase;
     margin-bottom: 5px;
 
-    @mixin largeScreen {
+    @mixin l_screen {
       font-size: 1.2rem;
       margin-bottom: 10px;
     }
@@ -216,7 +216,7 @@
     font-weight: 300;
     font-style: italic;
 
-    @mixin largeScreen {
+    @mixin l_screen {
       font-size: 1.1rem;
     }
   }
@@ -224,12 +224,12 @@
   &__legal {
     padding: 20px 0;
 
-    @mixin largeScreen {
+    @mixin l_screen {
       padding: 25px;
     }
 
     a {
-      color: $mediumGrey;
+      color: $medium_grey;
 
       &:hover {
         color: #fff;
@@ -244,11 +244,11 @@
 
       font-family: $poppins;
       font-size: 0.75rem;
-      color: $mediumGrey;
+      color: $medium_grey;
       text-transform: uppercase;
       text-align: center;
 
-      @mixin XSmallScreen {
+      @mixin xs_screen {
         flex-direction: row;
       }
 
@@ -257,11 +257,11 @@
         $footer_li_gap: 20px;
         margin-left: 0px;
 
-        @mixin XSmallScreen {
+        @mixin xs_screen {
           margin-left: $footer_li_gap;
         }
 
-        @mixin mediumScreen {
+        @mixin m_screen {
           &::before {
             content: "|";
             font-family: inherit;
@@ -275,7 +275,7 @@
         list-style: none;
         margin-bottom: 20px;
 
-        @mixin mediumScreen {
+        @mixin m_screen {
           margin-bottom: 0;
         }
       }

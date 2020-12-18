@@ -7,7 +7,7 @@
     height: 50px;
     width: 50px;
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       height: 68px;
       width: 68px;
     }
@@ -15,7 +15,7 @@
 
   &__circle-arrow {
     font-size: 1.2rem;
-    color: $darkGrey;
+    color: $dark_grey;
   }
 
   &__rounded {
@@ -23,23 +23,23 @@
     align-items: center;
     height: 50px;
     padding: 0px 25px;
-    border: 1px solid $darkGrey;
+    border: 1px solid $dark_grey;
     border-radius: 35px;
     background-color: transparent;
-    transition: all $animFast ease-out;
+    transition: all $anim_fast ease-out;
 
     font-family: $poppins;
     font-size: 0.65rem;
     font-weight: 600;
     text-transform: uppercase;
 
-    @mixin XSmallScreen {
+    @mixin xs_screen {
       font-size: 0.8rem;
       height: 60px;
       padding: 0px 35px;
     }
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       height: 70px;
       padding: 0px 70px;
     }

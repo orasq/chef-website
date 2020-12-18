@@ -5,21 +5,21 @@
     grid-template-columns: minmax(100px, 240px);
     justify-content: center;
     row-gap: 4vw;
-    column-gap: $columnGap;
+    column-gap: $column_gap;
 
-    @mixin XSmallScreen {
+    @mixin xs_screen {
       grid-template-columns: minmax(100px, 350px);
     }
 
-    @mixin smallScreen {
+    @mixin s_screen {
       grid-template-columns: repeat(2, minmax(200px, 1fr));
     }
 
-    @mixin mediumScreen {
+    @mixin m_screen {
       grid-template-columns: repeat(3, minmax(200px, 1fr));
     }
 
-    @mixin XLargeScreen {
+    @mixin xl_screen {
       row-gap: 55px;
     }
   }

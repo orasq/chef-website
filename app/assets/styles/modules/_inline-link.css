@@ -6,9 +6,9 @@
   font-size: 1rem;
   font-weight: 300;
   font-style: italic;
-  color: $darkGrey;
+  color: $dark_grey;
   overflow: hidden;
-  transition: all $animFast ease-out;
+  transition: all $anim_fast ease-out;
 
   &::before {
     content: "";
@@ -18,8 +18,8 @@
     transform: translateY(calc(100% - 1px));
     height: 100%;
     width: 100%;
-    background-color: $darkGrey;
-    transition: all $animFast ease-out;
+    background-color: $dark_grey;
+    transition: all $anim_fast ease-out;
     z-index: -1;
   }
 

@@ -1,8 +1,9 @@
 /* COLORS */
-$bgLightGrey: #dce1e7;
-$lightGrey: #a8b2bc;
-$mediumGrey: #676767;
-$darkGrey: #212121;
+$bg_light_grey: #dce1e7;
+$menu_light_grey: #e7e3e2;
+$light_grey: #a8b2bc;
+$medium_grey: #676767;
+$dark_grey: #212121;
 
 $yellow: #f2ce00;
 
@@ -11,14 +12,16 @@ $poppins: "Poppins", sans-serif;
 $garamond: "EB Garamond", serif;
 
 /* ANIMATIONS */
-$animFast: 0.2s;
-$animSlow: 0.5s;
+$anim_fast: 0.2s;
+$anim_slow: 0.5s;
+
+$smooth_bezier: cubic-bezier(0.17, 0.67, 0.1, 0.75);
 
 /* LAYOUT */
-$columnGap: 0px;
-@mixin smallScreen {
-  $columnGap: 2vw;
+$column_gap: 0px;
+@mixin s_screen {
+  $column_gap: 2vw;
 }
-@mixin XLargeScreen {
-  $columnGap: 30px;
+@mixin xl_screen {
+  $column_gap: 30px;
 }
