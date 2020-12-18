@@ -29,6 +29,10 @@
     @mixin XLargeScreen {
       font-size: 1.2rem;
     }
+
+    img {
+      max-height: 36px;
+    }
   }
 
   &__main-nav {
