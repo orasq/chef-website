@@ -1,6 +1,6 @@
 .card {
   background-color: #fff;
-  transition: all $anim_fast ease-out;
+  transition: all $anim_mid $smooth_bezier;
   cursor: pointer;
 
   /* avoid hover effect on mobile */
@@ -27,7 +27,7 @@
   @media (hover: hover) and (pointer: fine) {
     /* select all item except the one beeing hovered */
     &__main-wrap:hover &:not(:hover) {
-      opacity: 0.5;
+      opacity: 0.7;
       filter: blur(4px);
     }
   }

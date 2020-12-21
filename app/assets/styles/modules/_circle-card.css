@@ -1,4 +1,11 @@
 .circle-card {
+  &:hover {
+    .circle-card__circle::before {
+      opacity: 1;
+      color: #fff;
+    }
+  }
+
   &__wrap {
     display: grid;
     grid-template-columns: minmax(100px, 150px);
@@ -35,6 +42,28 @@
       content: "";
       display: block;
       padding-bottom: 100%; /* padding is calculated as a percentage of its parent element’s width */
+    }
+
+    &::before {
+      content: "⟶";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: $poppins;
+      font-size: 2rem;
+      color: transparent;
+
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity $anim_fast ease-out, color $anim_mid ease-out 0.2s;
+      z-index: 2;
     }
 
     img {

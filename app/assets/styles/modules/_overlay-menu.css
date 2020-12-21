@@ -104,6 +104,15 @@
       margin-bottom: 40px;
       font-size: 2.5rem;
     }
+
+    a {
+      color: $dark_grey;
+      transition: color $anim_fast ease-out;
+
+      &:hover {
+        color: $medium_grey;
+      }
+    }
   }
 
   &__submenu {
@@ -189,7 +198,7 @@
     width: 100%;
     margin-top: 30px;
     margin-bottom: 40px;
-    transition: transform $anim_slow $smooth_bezier;
+    transition: transform $anim_mid $smooth_bezier;
     z-index: 2;
 
     img {
@@ -230,6 +239,6 @@
 
   &__sidebar-btn {
     font-size: 1.2rem;
-    transition: transform $anim_slow $smooth_bezier;
+    transition: transform $anim_mid $smooth_bezier;
   }
 }

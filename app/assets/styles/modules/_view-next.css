@@ -1,6 +1,31 @@
 .view-next {
+  position: relative;
+  display: block;
   text-align: center;
   text-transform: uppercase;
+  padding: 100px 0;
+  color: $dark_grey;
+  transition: all $anim_fast ease-out;
+
+  &:hover {
+    color: #fff;
+
+    .view-next__image {
+      opacity: 1;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity $anim_fast ease-out;
+    filter: brightness(0.4);
+  }
 
   &__sub-title {
     display: block;
@@ -12,6 +37,7 @@
       font-size: 0.8rem;
     }
   }
+
   &__page-name {
     display: block;
     margin-top: 10px;

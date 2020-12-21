@@ -84,8 +84,8 @@
                 <li class="overlay-menu__submenu-item"><a href="#">Facebook</a></li>
               </ul>
             </li>
-            <li class="overlay-menu__item">Nea & Food Blog</li>
-            <li class="overlay-menu__item">Contact us</li>
+            <li class="overlay-menu__item"><a href="#">Nea & Food Blog</a></li>
+            <li class="overlay-menu__item"><a href="#">Contact us</a></li>
           </ul>
         </nav>
         <a href="#" class="overlay-menu__sidebar">
@@ -592,9 +592,9 @@
       </div>
     </section>
 
-    <section class="wrapper mb-xl">
+    <section class="wrapper mb-m">
       <div class="cover-image-bloc text-center" data-scroll-reveal="true">
-        <img data-pin-nopin="true" class="cover-image-bloc__image" src="./assets/images/food-top.png" alt="food top view">
+          <img data-pin-nopin="true" class="cover-image-bloc__image" src="./assets/images/food-top.png" alt="food top view">
         <div class="cover-image-bloc__content">
           <span class="spantitle__sansserif-m uppercase cover-image-bloc__cat-title">suggested menus</span>
           <h2 class="uppercase mt-s mb-s">Your sunday<br /> brunch <b>menu</b></h2>
@@ -604,12 +604,20 @@
         </div>
       </div>
     </section>
-    <div class="view-next mb-xl">
-      <a href="#">
+
+    <a href="#" class="view-next">
+      <picture>
+          <source srcset="./assets/images/next-xxl.jpg 3000w" media="(min-width: 2000px)">
+          <source srcset="./assets/images/next-xxl.jpg 2000w" media="(min-width: 1200px)">
+          <source srcset="./assets/images/next-xxl.jpg 1200w" media="(min-width: 768px)">
+          <source srcset="./assets/images/next-xxl.jpg 768w" media="(min-width: 400px)">
+          <img data-pin-nopin="true" class="view-next__image" src="./assets/images/next-s.jpg 400w" alt="food bg">
+        </picture>
+      <div>
         <span class="view-next__sub-title" data-scroll-reveal="true">view next</span>
         <span class="view-next__page-name" data-scroll-reveal="true">News & Updates</span>
-      </a>
-    </div>
+      </div>
+    </a>
 
 
     <footer class="footer">
@@ -635,12 +643,12 @@
         <div class="footer__bottom-part mb-m">
           <div class="footer__grid-left">
             <ul class="footer__site-links">
-              <li class="footer__text">The Chef</li>
-              <li class="footer__text">News</li>
-              <li class="footer__text">Recipes</li>
-              <li class="footer__text">Video</li>
-              <li class="footer__text">Gastropedia</li>
-              <li class="footer__text">Contact</li>
+              <li class="footer__text"><a class="footer__link" href="#">The Chef</a></li>
+              <li class="footer__text"><a class="footer__link" href="#">News</a></li>
+              <li class="footer__text"><a class="footer__link" href="#">Recipes</a></li>
+              <li class="footer__text"><a class="footer__link" href="#">Video</a></li>
+              <li class="footer__text"><a class="footer__link" href="#">Gastropedia</a></li>
+              <li class="footer__text"><a class="footer__link" href="#">Contact</a></li>
             </ul>
           </div>
           <div class="footer__grid-center">
@@ -655,7 +663,7 @@
           <div class="footer__grid-right">
             <div class="footer__text-bloc">
               <span class="footer__title">Contact</span>
-              <a href="#" class="footer__text">info@panosioannidis.gr</a>
+              <a href="#" class="footer__text footer__link">info@panosioannidis.gr</a>
             </div>
             <div class="footer__text-bloc">
               <span class="footer__title">Address</span>

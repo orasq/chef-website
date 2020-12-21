@@ -115,11 +115,12 @@
     width: 24px;
     margin: 0 10px;
     fill: $dark_grey;
-    transition: fill$anim_fasts ease-out;
+    transition: all $anim_fast ease-out;
     cursor: pointer;
 
     &:hover {
       fill: $medium_grey;
+      transform: scale(1.2);
     }
   }
 
@@ -143,11 +144,11 @@
     &:hover {
       span {
         background-color: $medium_grey;
-        transition: back$anim_fastnd-color 0.2s ease-out;
+        transition: background-color $anim_fast ease-out;
         &::before,
         &::after {
           background-color: $medium_grey;
-          transition: back$anim_fastnd-color 0.2s ease-out;
+          transform: scale(0.8, 1);
         }
       }
     }
@@ -158,14 +159,17 @@
       height: 2px;
       width: 100%;
       background-color: $dark_grey;
+      transition: background-color $anim_fast ease-out;
 
       &::before,
       &::after {
         content: "";
         height: 2px;
         width: 30px;
+        transform: translateY(0);
         position: absolute;
         background-color: $dark_grey;
+        transition: all $anim_fast ease-out;
       }
 
       &::before {

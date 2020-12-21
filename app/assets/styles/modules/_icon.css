@@ -46,7 +46,7 @@
       stroke: $red;
       filter: drop-shadow(0 0 3mm rgb(0, 0, 0, 0));
       animation-name: heart_bounce;
-      animation-duration: $anim_slow;
+      animation-duration: $anim_mid;
       animation-timing-function: ease-out;
 
       &:hover {

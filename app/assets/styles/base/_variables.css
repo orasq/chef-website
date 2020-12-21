@@ -1,7 +1,7 @@
 /* COLORS */
 /*$bg_light_grey: #dce1e7;*/
 $bg_light_grey: #ededed;
-$menu_light_grey: #e7e3e2;
+$menu_light_grey: #dedcdc;
 $light_grey: #a8b2bc;
 $medium_grey: #676767;
 $dark_grey: #212121;
@@ -15,7 +15,8 @@ $garamond: "EB Garamond", serif;
 
 /* ANIMATIONS */
 $anim_fast: 0.2s;
-$anim_slow: 0.5s;
+$anim_mid: 0.5s;
+$anim_slow: 1s;
 
 $smooth_bezier: cubic-bezier(0.17, 0.67, 0.1, 0.75);
 
