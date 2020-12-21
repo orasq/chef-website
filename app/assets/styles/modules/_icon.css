@@ -32,7 +32,7 @@
     stroke: #fff;
     fill: transparent;
     stroke-width: 2px;
-    filter: drop-shadow(0 0mm 3mm rgb(0, 0, 0));
+    filter: drop-shadow(0 0 3mm rgb(0, 0, 0));
     transition: all $anim_fast $smooth_bezier;
     cursor: pointer;
 
@@ -44,7 +44,7 @@
     &--is-active {
       fill: $red;
       stroke: $red;
-      filter: drop-shadow(0 0mm 3mm rgb(0, 0, 0, 0));
+      filter: drop-shadow(0 0 3mm rgb(0, 0, 0, 0));
       animation-name: heart_bounce;
       animation-duration: $anim_slow;
       animation-timing-function: ease-out;
@@ -58,7 +58,7 @@
   /* if doesn't also have class of 'active' */
   &__heart--dark:not(&__heart--is-active) {
     stroke: $dark_grey;
-    filter: drop-shadow(0 0mm 3mm rgb(0, 0, 0, 0));
+    filter: drop-shadow(0 0 3mm rgb(0, 0, 0, 0));
 
     &:hover {
       stroke: $red;
