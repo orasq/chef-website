@@ -14,10 +14,8 @@ HeartIcon();
 import OverlayMenu from "./modules/OverlayMenu";
 OverlayMenu();
 
-// Class import
-import ClassBase from "./modules/ClassBase";
-new ClassBase(/*arg1, arg2*/);
-new ClassBase(/*arg1, arg2*/);
+import ScrollReveal from "./modules/ScrollReveal";
+ScrollReveal();
 
 /* allows webpack's hot modules replacements */
 if (module.hot) {

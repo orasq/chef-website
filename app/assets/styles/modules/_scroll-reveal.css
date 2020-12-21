@@ -1,0 +1,10 @@
+.scroll-reveal {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all $anim_slow ease-out;
+
+  &--is-visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
