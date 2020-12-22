@@ -1,0 +1,31 @@
+.form {
+  & > * + * {
+    margin-top: 10px;
+  }
+  &__label {
+    font-family: $poppins;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: $medium_grey;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  &__text-input {
+    height: 30px;
+    border: 1px solid $light_grey;
+    border-radius: 2px;
+  }
+
+  &__button {
+    cursor: pointer;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: $poppins;
+    font-size: 0.8rem;
+    text-decoration: underline;
+  }
+}

@@ -110,10 +110,28 @@
     }
   }
 
+  &__tools-item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+  }
+
+  &__login {
+    position: relative;
+    transform: translateY(20px);
+  }
+
+  &__login-icon {
+    margin-bottom: 20px;
+  }
+
   &__tools-icons {
     height: 24px;
     width: 24px;
-    margin: 0 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     fill: $dark_grey;
     transition: all $anim_fast ease-out;
     cursor: pointer;

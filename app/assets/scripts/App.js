@@ -20,6 +20,9 @@ OverlayMenu();
 import ScrollReveal from "./modules/ScrollReveal";
 ScrollReveal();
 
+import LoginDropdown from "./modules/LoginDropdown";
+LoginDropdown();
+
 /* allows webpack's hot modules replacements */
 if (module.hot) {
   module.hot.accept();
