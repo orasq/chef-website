@@ -11,7 +11,9 @@ const LoginDropdown = () => {
 
   function closeDropdown() {
     loginDropdown.classList.remove("login-dropdown--is-visible");
-    loginDropdown.classList.remove("login-dropdown--is-displayed");
+    setTimeout(() => {
+      loginDropdown.classList.remove("login-dropdown--is-displayed");
+    }, 125);
   }
 
   loginIcon.addEventListener("mouseenter", openDropdown);

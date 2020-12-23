@@ -9,6 +9,7 @@
 body {
   color: $dark_grey;
   background-color: $bg_light_grey;
+  overflow-x: hidden;
 
   &.menu--is-open {
     overflow: hidden;
