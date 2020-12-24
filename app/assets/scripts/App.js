@@ -4,7 +4,7 @@ Development performance and practical benefits */
 import "../styles/styles.css";
 
 /* lazy loading for images.
-Add "lazyload" class to <img> tags, and change 'srcset' to 'data-srcset'*/
+Add "lazyload" class to <img> tags, change 'src' to 'data-src' and 'srcset' to 'data-srcset'*/
 import "lazysizes";
 
 // Function import
