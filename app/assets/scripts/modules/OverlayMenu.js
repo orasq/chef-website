@@ -45,7 +45,6 @@ const OverlayMenu = () => {
     });
 
   function openMenu() {
-    console.log(boxshadowSize);
     document.body.classList.add("menu--is-open");
     menuIsOpen = true;
     tl.timeScale(1).play();
