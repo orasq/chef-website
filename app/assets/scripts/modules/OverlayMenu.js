@@ -38,6 +38,7 @@ const OverlayMenu = () => {
       "=-0.4"
     )
     .from(".overlay-menu__close-icon", {
+      duration: 0.8,
       opacity: 0,
       scale: 0.5,
       ease: "elastic.out(1.2, 0.3)",
