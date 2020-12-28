@@ -108,7 +108,7 @@
     width: 20px;
     margin-left: 10px;
     fill: $dark_grey;
-    cursor: pointer;
+    cursor: not-allowed;
   }
 
   &__title-small {

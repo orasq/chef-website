@@ -134,6 +134,12 @@
     margin-bottom: 20px;
   }
 
+  &__search {
+    svg {
+      cursor: not-allowed;
+    }
+  }
+
   &__tools-icons {
     height: 24px;
     width: 24px;
