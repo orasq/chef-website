@@ -879,6 +879,9 @@ h1 b, h2 b {
 .header__login-icon {
     margin-bottom: 20px;
   }
+.header__search svg {
+      cursor: not-allowed;
+    }
 .header__tools-icons {
     height: 24px;
     width: 24px;
@@ -1114,7 +1117,7 @@ h1 b, h2 b {
     width: 20px;
     margin-left: 10px;
     fill: #212121;
-    cursor: pointer;
+    cursor: not-allowed;
   }
 .card__title-small {
     font-family: "Poppins", sans-serif;
