@@ -168,7 +168,7 @@
       break-inside: avoid;
 
       &::before {
-        content: url("../assets/images/right-arrow.svg");
+        content: url("./assets/images/right-arrow.svg");
         height: 20px;
         width: 20px;
         margin-right: 5px;

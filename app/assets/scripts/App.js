@@ -23,6 +23,9 @@ ScrollReveal();
 import LoginDropdown from "./modules/LoginDropdown";
 LoginDropdown();
 
+import Loading from "./modules/Loading";
+Loading();
+
 /* allows webpack's hot modules replacements */
 if (module.hot) {
   module.hot.accept();

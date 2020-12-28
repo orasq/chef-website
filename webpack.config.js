@@ -93,13 +93,14 @@ if (currentTask == "dev") {
   config.mode = "development";
 }
 
-/* copy images in
+/* copy images & fonts in
 'build' mode  */
 
 class RunAfterCompile {
   apply(compiler) {
     compiler.hooks.done.tap("Copy images", () => {
       fse.copySync("./app/assets/images", "./docs/assets/images");
+      fse.copySync("./app/assets/fonts", "./docs/assets/fonts");
     });
   }
 }
