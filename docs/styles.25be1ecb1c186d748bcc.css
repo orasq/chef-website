@@ -1004,13 +1004,15 @@ h1 b, h2 b {
   }
 .card {
   background-color: #fff;
-  transition: all 0.5s cubic-bezier(0.17, 0.67, 0.1, 0.75);
+  transition: 0.5s cubic-bezier(0.17, 0.67, 0.1, 0.75);
+  transition-property: opacity transform box-shadow;
+  will-change: transform;
   cursor: pointer;
 }
 /* avoid hover effect on mobile */
 @media (hover: hover) and (pointer: fine) {
     .card:hover {
-      transform: scale(1);
+      transform: translateY(-10px);
       box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.2);
     }
   }
@@ -1034,8 +1036,8 @@ h1 b, h2 b {
     /* select all item except the one beeing hovered */
 }
     .card__main-wrap:hover .card:not(:hover) {
-      opacity: 0.7;
-      filter: blur(4px);
+      filter: grayscale(100%);
+      opacity: 0.4;
     }
   }
 .card__wrap {
@@ -1087,11 +1089,7 @@ h1 b, h2 b {
         left: 0;
         height: 70px;
         width: 100%;
-        background: linear-gradient(
-          0deg,
-          rgba(0, 0, 0, 0.5) 0%,
-          rgba(0, 0, 0, 0) 100%
-        );
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
         z-index: 1;
       }
 .card__text-wrap {
@@ -2018,19 +2016,11 @@ h1 b, h2 b {
     }
 .services__carousel::before {
       left: 0;
-      background: linear-gradient(
-        90deg,
-        rgba(237,237,237, 1) 0%,
-        rgba(237,237,237, 0) 100%
-      );
+      background: linear-gradient(90deg, rgba(237,237,237, 1) 0%, rgba(237,237,237, 0) 100%);
     }
 .services__carousel::after {
       right: 0;
-      background: linear-gradient(
-        270deg,
-        rgba(237,237,237, 1) 0%,
-        rgba(237,237,237, 0) 100%
-      );
+      background: linear-gradient(270deg, rgba(237,237,237, 1) 0%, rgba(237,237,237, 0) 100%);
     }
 .services__wrap {
     display: grid;
@@ -2094,7 +2084,7 @@ h1 b, h2 b {
 .services__card:hover {
       background-color: #f2ce00;
     }
-.services__figure {
+.services__image {
     display: flex; /* in order to use "object-fit" on 'img' */
     top: 0;
     left: 0;
@@ -2103,11 +2093,11 @@ h1 b, h2 b {
   }
 @media (min-width: 768px) {
 
-  .services__figure {
+  .services__image {
       height: 125px
   }
   }
-.services__figure img {
+.services__image img {
       min-height: 100%;
       min-width: 100%;
       -o-object-fit: cover;

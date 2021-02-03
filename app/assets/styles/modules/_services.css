@@ -24,20 +24,12 @@
 
     &::before {
       left: 0;
-      background: linear-gradient(
-        90deg,
-        rgba($bg_light_grey, 1) 0%,
-        rgba($bg_light_grey, 0) 100%
-      );
+      background: linear-gradient(90deg, rgba($bg_light_grey, 1) 0%, rgba($bg_light_grey, 0) 100%);
     }
 
     &::after {
       right: 0;
-      background: linear-gradient(
-        270deg,
-        rgba($bg_light_grey, 1) 0%,
-        rgba($bg_light_grey, 0) 100%
-      );
+      background: linear-gradient(270deg, rgba($bg_light_grey, 1) 0%, rgba($bg_light_grey, 0) 100%);
     }
   }
 
@@ -99,7 +91,7 @@
     }
   }
 
-  &__figure {
+  &__image {
     display: flex; /* in order to use "object-fit" on 'img' */
     top: 0;
     left: 0;
